@@ -1,0 +1,135 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: #f1f1f1;
+}
+
+/* Header Title */
+.header {
+  padding: 30px;
+  text-align: center;
+  background: white;
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+/*  barra de navegação */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* links do menu */
+.topnav a {
+  float: left;
+  display: block;
+  color: yellow;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color:yellow;
+  color: black;
+}
+.ContainerIndex div {
+  width: 300px; 
+  height: 300 px;
+}
+/* coluna esquerda */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+  position: relative;
+  
+}
+
+/* coluna direita */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color:white;
+  padding-left: 20px;
+  
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: white;
+  width: 100%;
+  
+}
+
+/*card  */
+@media screen and (max-width: 800px) {
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+}
+
+/* Clear floats after the columns */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #333;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+
+  .FlexContainer, .ContainerIndex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  width: 100%;
+  background-color: white;
+  
+  overflow: auto;
+  flex-direction: row-reverse;
+}
+.ContainerIndex{
+width: 75%;
+}
+
+@media screen and (max-width: 400px){
+.FlexContainer div {
+  width: 270px;
+  height: 300px;
+  margin: 15px;
+  background-color:#333;
+  
+}
+}
